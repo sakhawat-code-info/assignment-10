@@ -1,27 +1,29 @@
-import errorImage from '../assets/404.png'
+
 
 const ErrorPage = () => {
     return (
         <div>
-            <section className="px-4 py-24 mx-auto min-h-screen">
-                <div className="grid items-center w-full grid-cols-1 gap-10 mx-auto md:w-4/5 lg:grid-cols-2 xl:gap-32">
-                    <div>
-                        {/* <p className="mb-2 text-xs font-semibold tracking-wide text-gray-500 uppercase">Error 404</p> */}
-                        <h2 className="mb-8 font-extrabold text-9xl dark:text-gray-400">
-                            <span className="sr-only">Error</span>404
-                        </h2>
-                        <h1 className="mb-4 text-2xl font-extrabold leading-tight tracking-tight text-left text-gray-900 md:text-4xl">Oops! The page you're looking for isn't here.</h1>
-                        <p className="mb-5 text-base text-left text-gray-800 md:text-xl">You might have the wrong address, or the page may have moved.</p>
-                        <a href="#" className="w-full mb-2 btn btn-lg btn-light sm:w-auto sm:mb-0">Back to homepage</a>
-                        <a href="#" className="w-full mb-2 btn btn-lg btn-white sm:w-auto sm:mb-0">Contact us</a>
-                    </div>
-                    <div>
-                        <div className="w-full h-full bg-gray-200 rounded-lg">
-                            <img src={errorImage} alt="" />
+            <div className="relative h-screen overflow-hidden bg-indigo-900">
+                <img src="https://www.tailwind-kit.com/images/landscape/8.svg" className="absolute object-cover w-full h-full" />
+                <div className="absolute inset-0 bg-black opacity-25">
+                </div>
+                <div className="container relative z-10 flex items-center px-6 py-32 mx-auto md:px-12 xl:py-40">
+                    <div className="relative z-10 flex flex-col items-center w-full font-mono">
+                        <p className="font-extrabold text-white text-8xl animate-bounce">
+                            404
+                        </p>
+                        <h1 className="mb-20 text-5xl font-extrabold leading-tight text-center text-white">
+                            You&#x27;re alone here
+                        </h1>
+
+                        <div className="flex gap-48">
+                            <a href="#" className="w-full mb-2 btn btn-lg btn-light sm:w-auto sm:mb-0">Go to Back</a>
+                            <a href="#" className="w-full mb-2 btn btn-lg btn-white sm:w-auto sm:mb-0">Contact us</a>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+
         </div>
     );
 };
