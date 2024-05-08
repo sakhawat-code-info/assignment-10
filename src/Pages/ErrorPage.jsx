@@ -2,28 +2,17 @@
 
 const ErrorPage = () => {
     return (
-        <div>
-            <div className="relative h-screen overflow-hidden bg-indigo-900">
-                <img src="https://www.tailwind-kit.com/images/landscape/8.svg" className="absolute object-cover w-full h-full" />
-                <div className="absolute inset-0 bg-black opacity-25">
-                </div>
-                <div className="container relative z-10 flex items-center px-6 py-32 mx-auto md:px-12 xl:py-40">
-                    <div className="relative z-10 flex flex-col items-center w-full font-mono">
-                        <p className="font-extrabold text-white text-8xl animate-bounce">
-                            404
-                        </p>
-                        <h1 className="mb-20 text-5xl font-extrabold leading-tight text-center text-white">
-                            You&#x27;re alone here
-                        </h1>
-
-                        <div className="flex gap-48">
-                            <a href="#" className="w-full mb-2 btn btn-lg btn-light sm:w-auto sm:mb-0">Go to Back</a>
-                            <a href="#" className="w-full mb-2 btn btn-lg btn-white sm:w-auto sm:mb-0">Contact us</a>
-                        </div>
-                    </div>
-                </div>
+        <div className="flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat bg-[url('https://source.unsplash.com/random/1920x1080?nature')]">
+            <div className="max-w-md mx-auto text-center bg-white bg-opacity-90 p-8 rounded-lg shadow-lg">
+                <div className="text-9xl font-bold text-indigo-600 mb-4">404</div>
+                <h1 className="text-4xl font-bold text-gray-800 mb-6">Oops! Page Not Found</h1>
+                <p className="text-lg text-gray-600 mb-8">The page you are looking for seems to have gone on a little adventure. Do not
+                    worry, we will help you find your way back home.</p>
+                <a href="#"
+                    className="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-indigo-700 transition-colors duration-300">
+                    Go Back Home
+                </a>
             </div>
-
         </div>
     );
 };

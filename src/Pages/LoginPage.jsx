@@ -2,83 +2,137 @@
 
 const LoginPage = () => {
     return (
-        <div>
-            <div className="w-full h-screen font-sans bg-cover bg-landscape bg-gray-300">
-                <div className="container flex items-center justify-center flex-1 h-full mx-auto">
-                    <div className="w-full max-w-lg">
-                        <div className="leading-loose">
-                            <div className="flex flex-col w-full rounded shadow-xl bg-white/25 max-w-md px-4 py-8 bg-white dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
-                                <div className="self-center mb-6 text-xl font-light text-gray-600 sm:text-2xl dark:text-white">
-                                    Login To Your Account
-                                </div>
-                                <div className="flex gap-4 item-center">
-                                    <button type="button" className="py-2 px-4 flex justify-center items-center  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                                        <svg width="20" height="20" fill="currentColor" className="mr-2" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z">
-                                            </path>
-                                        </svg>
-                                        Facebook
-                                    </button>
-                                    <button type="button" className="py-2 px-4 flex justify-center items-center  bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                                        <svg width="20" height="20" fill="currentColor" className="mr-2" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M896 786h725q12 67 12 128 0 217-91 387.5t-259.5 266.5-386.5 96q-157 0-299-60.5t-245-163.5-163.5-245-60.5-299 60.5-299 163.5-245 245-163.5 299-60.5q300 0 515 201l-209 201q-123-119-306-119-129 0-238.5 65t-173.5 176.5-64 243.5 64 243.5 173.5 176.5 238.5 65q87 0 160-24t120-60 82-82 51.5-87 22.5-78h-436v-264z">
-                                            </path>
-                                        </svg>
-                                        Google
-                                    </button>
-                                </div>
-                                <div className="mt-8">
-                                    <form action="#" autoComplete="off">
-                                        <div className="flex flex-col mb-2">
-                                            <div className="flex relative ">
-                                                <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
-                                                    <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z">
-                                                        </path>
-                                                    </svg>
-                                                </span>
-                                                <input type="text" id="sign-in-email" className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your email" />
-                                            </div>
-                                        </div>
-                                        <div className="flex flex-col mb-6">
-                                            <div className="flex relative ">
-                                                <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
-                                                    <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1376 768q40 0 68 28t28 68v576q0 40-28 68t-68 28h-960q-40 0-68-28t-28-68v-576q0-40 28-68t68-28h32v-320q0-185 131.5-316.5t316.5-131.5 316.5 131.5 131.5 316.5q0 26-19 45t-45 19h-64q-26 0-45-19t-19-45q0-106-75-181t-181-75-181 75-75 181v320h736z">
-                                                        </path>
-                                                    </svg>
-                                                </span>
-                                                <input type="password" id="sign-in-email" className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your password" />
-                                            </div>
-                                        </div>
-                                        <div className="flex items-center mb-6 -mt-4">
-                                            <div className="flex ml-auto">
-                                                <a href="#" className="inline-flex text-xs font-thin text-gray-500 sm:text-sm dark:text-gray-100 hover:text-gray-700 dark:hover:text-white">
-                                                    Forgot Your Password?
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="flex w-full">
-                                            <button type="submit" className="py-2 px-4  bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                                                Login
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div className="flex items-center justify-center mt-6">
-                                    <a href="#" target="_blank" className="inline-flex items-center text-xs font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white">
-                                        <span className="ml-2">
-                                            You don&#x27;t have an account?
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
+        <div className="py-16">
+            <div className="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
+                <div className="hidden lg:block lg:w-1/2 bg-cover bg-[url('https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80')]">
+                </div>
+                <div className="w-full p-8 lg:w-1/2">
+                    <h2 className="text-2xl font-semibold text-gray-700 text-center">Brand</h2>
+                    <p className="text-xl text-gray-600 text-center">Welcome back!</p>
 
+                    {/* <a href="#" className="flex items-center justify-center mt-4 text-white rounded-lg shadow-md hover:bg-gray-100">
+              <div className="px-4 py-3">
+                <svg className="h-6 w-6" viewBox="0 0 40 40">
+                  <path
+                    d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.045 27.2142 24.3525 30 20 30C14.4775 30 10 25.5225 10 20C10 14.4775 14.4775 9.99999 20 9.99999C22.5492 9.99999 24.8683 10.9617 26.6342 12.5325L31.3483 7.81833C28.3717 5.04416 24.39 3.33333 20 3.33333C10.7958 3.33333 3.33335 10.7958 3.33335 20C3.33335 29.2042 10.7958 36.6667 20 36.6667C29.2042 36.6667 36.6667 29.2042 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z"
+                    fill="#FFC107" />
+                  <path
+                    d="M5.25497 12.2425L10.7308 16.2583C12.2125 12.59 15.8008 9.99999 20 9.99999C22.5491 9.99999 24.8683 10.9617 26.6341 12.5325L31.3483 7.81833C28.3716 5.04416 24.39 3.33333 20 3.33333C13.5983 3.33333 8.04663 6.94749 5.25497 12.2425Z"
+                    fill="#FF3D00" />
+                  <path
+                    d="M20 36.6667C24.305 36.6667 28.2167 35.0192 31.1742 32.34L26.0159 27.975C24.3425 29.2425 22.2625 30 20 30C15.665 30 11.9842 27.2359 10.5975 23.3784L5.16254 27.5659C7.92087 32.9634 13.5225 36.6667 20 36.6667Z"
+                    fill="#4CAF50" />
+                  <path
+                    d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.7592 25.1975 27.56 26.805 26.0133 27.9758C26.0142 27.975 26.015 27.975 26.0158 27.9742L31.1742 32.3392C30.8092 32.6708 36.6667 28.3333 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z"
+                    fill="#1976D2" />
+                </svg>
+              </div>
+              <h1 className="px-4 py-3 w-5/6 text-center text-gray-600 font-bold">Sign in with Google</h1>
+            </a> */}
+
+
+                    <div
+                        id="third-party-auth"
+                        className="flex items-center justify-center mt-5 flex-wrap"
+                    >
+                        <button
+                            href="#"
+                            className="hover:scale-105 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1"
+                        >
+                            <img
+                                className="max-w-[25px]"
+                                src="https://ucarecdn.com/8f25a2ba-bdcf-4ff1-b596-088f330416ef/"
+                                alt="Google"
+                            />
+                        </button>
+                        <button
+                            href="#"
+                            className="hover:scale-105 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1"
+                        >
+                            <img
+                                className="max-w-[25px]"
+                                src="https://ucarecdn.com/95eebb9c-85cf-4d12-942f-3c40d7044dc6/"
+                                alt="Linkedin"
+                            />
+                        </button>
+                        <button
+                            href="#"
+                            className="hover:scale-105 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1"
+                        >
+                            <img
+                                className="max-w-[25px] filter dark:invert"
+                                src="https://ucarecdn.com/be5b0ffd-85e8-4639-83a6-5162dfa15a16/"
+                                alt="Github"
+                            />
+                        </button>
+                        <button
+                            href="#"
+                            className="hover:scale-105 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1"
+                        >
+                            <img
+                                className="max-w-[25px]"
+                                src="https://ucarecdn.com/6f56c0f1-c9c0-4d72-b44d-51a79ff38ea9/"
+                                alt="Facebook"
+                            />
+                        </button>
+                        <button
+                            href="#"
+                            className="hover:scale-105 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1"
+                        >
+                            <img
+                                className="max-w-[25px] dark:gray-100"
+                                src="https://ucarecdn.com/82d7ca0a-c380-44c4-ba24-658723e2ab07/"
+                                alt="twitter"
+                            />
+                        </button>
+
+                        <button
+                            href="#"
+                            className="hover:scale-105 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1"
+                        >
+                            <img
+                                className="max-w-[25px]"
+                                src="https://ucarecdn.com/3277d952-8e21-4aad-a2b7-d484dad531fb/"
+                                alt="apple"
+                            />
+                        </button>
+                    </div>
+
+
+                    <div className="mt-4 flex items-center justify-between">
+                        <span className="border-b w-1/5 lg:w-1/4"></span>
+                        <a href="#" className="text-xs text-center text-gray-500 uppercase">or login with Social Icons</a>
+                        <span className="border-b w-1/5 lg:w-1/4"></span>
+                    </div>
+
+
+                    <form>
+                        <div className="mt-4">
+                            <label className="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
+                            <input className="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" type="email" name='email' required />
                         </div>
+                        <div className="mt-4">
+                            <div className="flex justify-between">
+                                <label className="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                                <a href="#" className="text-xs text-gray-500">Forget Password?</a>
+                            </div>
+                            <input className="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" type="password" name='password' required />
+                        </div>
+                        <div className="mt-8">
+                            <button className="bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600">Login</button>
+                        </div>
+                    </form>
+
+
+
+
+                    <div className="mt-4 flex items-center justify-between">
+                        <span className="border-b w-1/5 md:w-1/4"></span>
+                        <a href="#" className="text-xs text-gray-500 uppercase">or registration</a>
+                        <span className="border-b w-1/5 md:w-1/4"></span>
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
