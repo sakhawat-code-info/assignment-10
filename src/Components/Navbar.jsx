@@ -1,96 +1,83 @@
-
+import { IoHomeOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+    const navLink = (
+        <>
+            <li>
+                <NavLink to="/" className={({ isActive }) => (isActive ? " border-2 border-teal-800 text-teal-800 font-extrabold" : "relative  border-teal-800 rounded px-4 py-2 inline cursor-pointer font-extrabold before:bg-teal-600 hover:rounded-b-none before:absolute before:-bottom-0 before:-left-0  before:block before:h-[3px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ")}>
+                    <div className="flex items-center justify-center gap-2">
+                        <IoHomeOutline size={18} />
+                        <span>Home</span>
+                    </div>
+                </NavLink>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+        </>
+    );
+
     return (
         <div>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M4 6h16M4 12h8m-8 6h16"
+                                />
+                            </svg>
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
+                            {navLink}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <a className="btn btn-ghost text-xl">
+                        <p className="text-[18px] font-medium text-white">
+                            <h1 className="text-black font-extrabold">
+                                <span className="text-rose-600">YOUR</span> LOGO
+                            </h1>
+                        </p>
+                    </a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className=" flex flex-wrap -mb-px">
-                        <li className="mr-2">
-                            <a href="#" className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">
-                                Home
-                            </a>
-                        </li>
-                        <li className="mr-2">
-                            <a href="#" className="inline-block p-4 text-purple-600 border-b-2 border-purple-600 rounded-t-lg active " aria-current="page">
-                                Calendar
-                            </a>
-                        </li>
-                        <li className="mr-2">
-                            <a href="#" className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">
-                                Results
-                            </a>
-                        </li>
-                        <li className="mr-2">
-                            <a href="#" className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">
-                                Live
-                            </a>
-                        </li>
+                    <ul className="menu menu-horizontal px-1 gap-4">
+                        {navLink}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <div>
-                        <button className="btn btn-accent">Login</button>
+                <div className="navbar-end gap-4">
+                    <div className="rounded-full bg-gradient-to-tr from-teal-600 via-teal-600  to-teal-800 p-1  shadow-lg w-32">
+                        <button className="font-bold bg-white px-6 py-1 rounded-full ">
+                            Login
+                        </button>
                     </div>
 
-                    <div className="flex items-center dropdown">
-                        <div className="relative ml-3">
-                            <div className="relative inline-block text-left">
-                                <div>
-                                    <button type="button" className="  flex items-center justify-center w-full rounded-md  px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500" id="options-menu">
-                                        <svg width="20" fill="currentColor" height="20" className="text-gray-800" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1523 1339q-22-155-87.5-257.5t-184.5-118.5q-67 74-159.5 115.5t-195.5 41.5-195.5-41.5-159.5-115.5q-119 16-184.5 118.5t-87.5 257.5q106 150 271 237.5t356 87.5 356-87.5 271-237.5zm-243-699q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm512 256q0 182-71 347.5t-190.5 286-285.5 191.5-349 71q-182 0-348-71t-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z">
-                                            </path>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div className="dropdown-content z-[1] absolute right-0 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
-                                    <div className="py-1 " role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                        <a href="#" className="block  px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600" role="menuitem">
-                                            <span className="flex flex-col">
-                                                <span>
-                                                    Settings
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <a href="#" className="block  px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600" role="menuitem">
-                                            <span className="flex flex-col">
-                                                <span>
-                                                    Account
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <a href="#" className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600" role="menuitem">
-                                            <span className="flex flex-col">
-                                                <span>
-                                                    Logout
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div className="flex flex-row items-center justify-start gap-4">
+                        <button className="rounded-2xl bg-red-600 px-4 py-2 font-bold leading-none text-white">Logout</button>
+
                     </div>
+
+
 
                 </div>
             </div>

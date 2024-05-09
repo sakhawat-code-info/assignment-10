@@ -1,5 +1,8 @@
 
 
+
+// bg-teal-800
+
 const Footer = () => {
     return (
         <div className="mt-8 bg-teal-800 pt-9">
