@@ -14,9 +14,8 @@ Currently, two official plugins are available:
 
 
 
+btn
+[#F9E2E3]
 
-button color 
-#ADD8E6
 
-
-#50ABE7
+bg-[#660746]

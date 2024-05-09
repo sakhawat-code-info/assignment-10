@@ -38,7 +38,6 @@ const Delete = () => {
 
 
 
-
         </div >
     );
 };
