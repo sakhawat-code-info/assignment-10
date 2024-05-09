@@ -36,7 +36,7 @@ const RegisterPage = () => {
                         <span className="border-b w-1/5 md:w-1/4"></span>
                     </div>
                 </div>
-                <div className="hidden lg:block lg:w-1/2 bg-cover bg-[url('https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80')]">
+                <div className="hidden lg:block lg:w-1/2 bg-cover bg-[url('https://img.freepik.com/free-vector/completed-steps-concept-illustration_114360-5521.jpg?t=st=1715235788~exp=1715239388~hmac=48f1bcd2546e98b1cdb89cac225952fdf56c85fa442a1fd78208a1eddaaed8a4&w=740')]">
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@ const LoginPage = () => {
     return (
         <div className="py-16">
             <div className="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
-                <div className="hidden lg:block lg:w-1/2 bg-cover bg-[url('https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80')]">
+                <div className="hidden lg:block lg:w-1/2 bg-cover bg-[url('https://img.freepik.com/free-vector/security-concept-illustration_114360-1528.jpg?t=st=1715236127~exp=1715239727~hmac=bdaf3c71a24ad112d1f31f2ee780a328c8560c5c92ac21067a1b4735db7225de&w=740')]">
                 </div>
                 <div className="w-full p-8 lg:w-1/2">
                     <h2 className="text-2xl font-semibold text-gray-700 text-center">Brand</h2>

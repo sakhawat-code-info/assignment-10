@@ -12,6 +12,22 @@ const Navbar = () => {
                     </div>
                 </NavLink>
             </li>
+            <li>
+                <NavLink to="/gdfgdf" className={({ isActive }) => (isActive ? " border-2 border-teal-800 text-teal-800 font-extrabold" : "relative  border-teal-800 rounded px-4 py-2 inline cursor-pointer font-extrabold before:bg-teal-600 hover:rounded-b-none before:absolute before:-bottom-0 before:-left-0  before:block before:h-[3px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ")}>
+                    <div className="flex items-center justify-center gap-2">
+                        <IoHomeOutline size={18} />
+                        <span>Home</span>
+                    </div>
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/fdhdfh" className={({ isActive }) => (isActive ? " border-2 border-teal-800 text-teal-800 font-extrabold" : "relative  border-teal-800 rounded px-4 py-2 inline cursor-pointer font-extrabold before:bg-teal-600 hover:rounded-b-none before:absolute before:-bottom-0 before:-left-0  before:block before:h-[3px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ")}>
+                    <div className="flex items-center justify-center gap-2">
+                        <IoHomeOutline size={18} />
+                        <span>Home</span>
+                    </div>
+                </NavLink>
+            </li>
 
 
 
